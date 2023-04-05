@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ShowAndHiddenDirective } from './shared/directives/show-and-hidden/show-and-hidden.directive';
+import { ShowAndHiddenService } from './shared/services/show-and-hidden/show-and-hidden.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ShowAndHiddenDirective, ShowAndHiddenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
